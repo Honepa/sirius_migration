@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Авторизация
+{% endblock %}
+
+{% block body %}
+<center>
+<main class="container px-3">
+    <h3> Авторизация </h3>
+    <p class="center lead">
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+    <form action="" method="post">
+	    <h1> email ⬇   </h1><input type="text" name="email" class="fw-bold border-black bg-white" size="30" width="500"> 
+     <br>
+	    <h1>password ⬇ </h1><input type="password" name="psw" class="fw-bold border-black bg-white" size="30">
+     <br>
+        <input type="checkbox" name="remainme" />
+     <br>
+	    <input type="submit" name="Принять" class="fw-bold border-black bg-white">
+
+    </form>
+    </p>
+
+
+</main>
+    </center>
+{% endblock %}

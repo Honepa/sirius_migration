@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+Основная страница
+{% endblock %}
+{% block body %}
+<br>
+<br>
+<br>
+<table width="100%">
+        <tr>
+            <td width="33%">
+                <center><a href="/soiskatel" title="Соискатель"><img href="{{url_for('static', filename='img/soiskatel.png')}}" src="../static/img/soiskatel.png" width="300" height="300"></a></center>
+            </td>
+            <td width="33%">
+                <center><a href="/rabotodatel" title="Работодатель"><img href="{{url_for('static', filename='img/rabotodatel.png')}}" src="../static/img/rabotodatel.png" width="300" height="300"></a></center>
+            </td>
+            <td width="33%">
+                <center><a href="/gosrabotnik" title="Госработник"><img href="{{url_for('static', filename='img/gosrabotnik.png')}}" src="../static/img/gosrabotnik.png" width="300" height="300"></a></center>
+            </td>
+        </tr>
+</table>
+{% endblock %}
+
